@@ -2,14 +2,14 @@ import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   page: {
-    backgroundColor: 'red',
     height: '100%',
+    backgroundColor: '#7b4e80',
   },
   cameraPreview: {
-    backgroundColor: '#7b4e80',
     flex: 1,
     alignItems: 'center',
-    padding: 10,
+    paddingTop: 10,
+    paddingHorizontal: 10,
   },
 
   name: {
@@ -23,6 +23,22 @@ const styles = StyleSheet.create({
   phoneNumber: {
     fontSize: 20,
     color: 'white',
+  },
+
+  buttonsContainer: {
+    backgroundColor: '#333333',
+    padding: 20,
+    paddingBottom: 40,
+    borderTopLeftRadius: 15,
+    borderTopRightRadius: 15,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+
+  iconButton: {
+    backgroundColor: '#4a4a4a',
+    padding: 15,
+    borderRadius: 50,
   },
 });
 
