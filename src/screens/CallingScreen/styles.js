@@ -47,6 +47,26 @@ const styles = StyleSheet.create({
     left: 10,
     zIndex: 10,
   },
+
+  localVideo: {
+    width: 100,
+    height: 150,
+    backgroundColor: '#ffff6e',
+    borderRadius: 10,
+    position: 'absolute',
+    right: 10,
+    top: 100,
+  },
+
+  remoteVideo: {
+    backgroundColor: '#7b4e80',
+    borderRadius: 10,
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    top: 0,
+    bottom: 100,
+  },
 });
 
 export default styles;

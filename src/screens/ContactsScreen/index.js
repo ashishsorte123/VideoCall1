@@ -3,6 +3,7 @@ import React, {useState, useEffect} from 'react';
 import {FlatList, Text, View, TextInput, Pressable} from 'react-native';
 import dummyContacts from '../../../assets/data/contacts.json';
 import styles from './styles';
+import {Voximplant} from 'react-native-voximplant';
 
 const ContactsScreen = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -10,6 +11,19 @@ const ContactsScreen = () => {
   //   console.log(searchTerm);
 
   const navigation = useNavigation();
+
+  const voximplant = Voximplant.getInstance();
+
+  useEffect(() => {
+    voximplant.on(Voximplant.ClientEvents.IncomingCall, incomingCallEvent => {
+      navigation.navigate('IncomingCall', {
+        call: incomingCallEvent.call,
+      });
+    });
+    return () => {
+      voximplant.off(Voximplant.ClientEvents.IncomingCall);
+    };
+  }, []);
 
   useEffect(() => {
     const newContacts = dummyContacts.filter(contact =>
