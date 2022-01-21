@@ -6,10 +6,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#7b4e80',
   },
   cameraPreview: {
-    flex: 1,
-    alignItems: 'center',
-    paddingTop: 10,
-    paddingHorizontal: 10,
+    width: 100,
+    height: 150,
+    backgroundColor: '#ffff6e',
+    borderRadius: 10,
+    position: 'absolute',
+    right: 10,
+    top: 100,
   },
 
   name: {
@@ -39,13 +42,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#4a4a4a',
     padding: 15,
     borderRadius: 50,
-  },
-
-  backButton: {
-    position: 'absolute',
-    top: 50,
-    left: 10,
-    zIndex: 10,
   },
 });
 

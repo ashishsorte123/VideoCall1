@@ -33,19 +33,13 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 15,
     flexDirection: 'row',
     justifyContent: 'space-between',
+    marginTop: 'auto',
   },
 
   iconButton: {
     backgroundColor: '#4a4a4a',
     padding: 15,
     borderRadius: 50,
-  },
-
-  backButton: {
-    position: 'absolute',
-    top: 50,
-    left: 10,
-    zIndex: 10,
   },
 });
 

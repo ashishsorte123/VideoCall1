@@ -3,6 +3,8 @@ import {StyleSheet} from 'react-native';
 const styles = StyleSheet.create({
   page: {
     padding: 15,
+    backgroundColor: 'white',
+    flex: 1,
   },
 
   contactName: {

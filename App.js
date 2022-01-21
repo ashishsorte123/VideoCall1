@@ -6,19 +6,17 @@
  * @flow strict-local
  */
 
+import 'react-native-gesture-handler';
 import React from 'react';
-import {SafeAreaView, StatusBar} from 'react-native';
-import CallingScreen from './src/screens/CallingScreen';
-import ContactsScreen from './src/screens/ContactsScreen';
-import IncomingCallScreen from './src/screens/IncomingCallingScreen';
+import {StatusBar} from 'react-native';
+import Navigation from './src/navigation';
 
 const App = () => {
   return (
     <>
       <StatusBar barStyle="light-content" />
-      {/* <ContactsScreen /> */}
-      {/* <CallingScreen /> */}
-      <IncomingCallScreen />
+
+      <Navigation />
     </>
   );
 };
